@@ -1,0 +1,10 @@
+fun main(args: Array<String>) {
+    //immutable variable-declared using val keyword
+    val name="evans"
+//mutable variable- declared using var keyword
+    var institution="stanford university"
+    institution="harvard university"
+
+    println("name:$name")
+    println("institution:$institution")
+}
