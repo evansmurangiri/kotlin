@@ -1,0 +1,25 @@
+open class countries{
+    constructor(name:String,president:String){
+        println("Name of the country is :$name")
+        println("The president is:$president")
+    }
+}
+ open class country(name: String,president: String):countries(name,president){
+       fun r1(population:Int,religion:String){
+        println("the country has a total population of: $population")
+        println("religion practiced in the counter is: $religion")
+        println("its is one of the countries found around europe")
+    }
+}
+class count(name: String,president: String):countries(name,president){
+    fun r1() {
+        println("one of the largestc ountries in asia")
+    }
+}
+fun main(args: Array<String>) {
+    val k=country("russia","vladimir putin")
+    k.r1(4056543,"christianity")
+println("============================================")
+    val m=count("china","xin jiping")
+    m.r1()
+}
